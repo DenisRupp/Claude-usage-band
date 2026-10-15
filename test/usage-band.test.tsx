@@ -1,37 +1,16 @@
 import type { ConfigRow, On } from 'claude-code'
 import { describe, expect, mock, test } from 'claude-code/testing'
 
-import {
-  barSvg,
-  cells,
-  contextBarSvg,
-  contextZone,
-  fmtCompact,
-  diffExcerpt,
-  fmtResetAt,
-  fmtMinutes,
-  fmtResetIn,
-  fmtTokens,
-  issueTitles,
-  keptLimits,
-  linearLinks,
-  mergeRecent,
-  mergeTasks,
-  planRows,
-  referencedSkills,
-  scanTranscript,
-  skillForkPrompt,
-  skillName,
-  shownFrom,
-  sparkSvg,
-  stageOf,
-  stageStatuses,
-  stagesInMessages,
-  stripFrontmatter,
-  tasksInMessages,
-  titledWith,
-  transcriptTurnMs,
-} from '../hooks/register'
+import { barSvg, cells, contextBarSvg, sparkSvg } from '../hooks/draw'
+import { fmtCompact, fmtMinutes, fmtResetAt, fmtResetIn, fmtTokens } from '../hooks/format'
+import { issueTitles, linearLinks, mergeTasks, tasksInMessages, titledWith } from '../hooks/linear'
+import { diffExcerpt, skillForkPrompt } from '../hooks/runs'
+import { shownFrom } from '../hooks/settings'
+import { mergeRecent, referencedSkills, scanTranscript, skillName, stripFrontmatter } from '../hooks/skills'
+import { stageOf, stageStatuses, stagesInMessages } from '../hooks/stages'
+import { contextZone } from '../hooks/theme'
+import { transcriptTurnMs } from '../hooks/thinking'
+import { keptLimits, planRows } from '../hooks/usage'
 
 const FIVE_RESET = '2026-10-09T15:00:00.000Z'
 const WEEK_RESET = '2026-10-13T09:00:00.000Z'

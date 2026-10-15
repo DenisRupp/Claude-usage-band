@@ -1,6 +1,6 @@
 {
   "name": "usage-band",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "description": "Band above the prompt: 5h/weekly limits with reset times, the context window's zone (smart, dumb, limit), tokens, cost, thinking time, linked Linear tasks, and Workflow stage, Session Recap, PR description and Hot commands panels; each part can be shown or hidden in Settings (⚙, /usage-band or /config).",
   "author": {
     "name": "hibro"
