@@ -1,0 +1,14 @@
+{
+  "name": "usage-band",
+  "description": "Personal Claude Code mods by hibro.",
+  "owner": {
+    "name": "hibro"
+  },
+  "plugins": [
+    {
+      "name": "usage-band",
+      "source": "./",
+      "description": "Band above the prompt: 5h/weekly limit bars with this session's share, session tokens, cost and thinking time, Session Recap and Hot commands panels."
+    }
+  ]
+}
