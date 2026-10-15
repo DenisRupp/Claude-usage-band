@@ -1,0 +1,35 @@
+{
+  "name": "usage-band",
+  "version": "1.10.0",
+  "description": "Band above the prompt: 5h/weekly limits with reset times, the context window's zone (smart, dumb, limit), tokens, cost, thinking time, linked Linear tasks, and Workflow stage, Session Recap, PR description and Hot commands panels; each part can be shown or hidden in Settings (⚙, /usage-band or /config).",
+  "author": {
+    "name": "hibro"
+  },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "showLimits": {
+      "type": "boolean",
+      "title": "Usage limits and resets",
+      "description": "The 5h and weekly limit bars, with when each resets.",
+      "default": true
+    },
+    "showContext": {
+      "type": "boolean",
+      "title": "Context and zone",
+      "description": "The context window bar and its zone: smart, dumb or at the limit.",
+      "default": true
+    },
+    "showSession": {
+      "type": "boolean",
+      "title": "Session and thinking",
+      "description": "This session's tokens in and out, its cost, and thinking time.",
+      "default": true
+    },
+    "showButtons": {
+      "type": "boolean",
+      "title": "Buttons",
+      "description": "Workflow stage, Session Recap, Generate PR description and Hot commands.",
+      "default": true
+    }
+  }
+}
