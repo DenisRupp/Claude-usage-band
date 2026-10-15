@@ -1,4 +1,4 @@
-# usage-band
+# Claude usage band plugin
 
 A Claude Code plugin that puts a band above the prompt. The band shows how much of your plan you have used and when it resets. It shows how full the context window is, and whether the model is still in its smart zone. It shows what the session cost, how long Claude has been thinking, and the Linear tasks you are working on. Below that is a row of buttons for your workflow: Workflow stage, Session Recap, Generate PR description and Hot commands.
 
